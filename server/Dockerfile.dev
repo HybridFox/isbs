@@ -1,0 +1,14 @@
+FROM node:gallium-alpine
+
+# Expose ports
+EXPOSE 3000 9229
+
+# Install dependencies
+RUN mkdir /app && chown node:node /app
+WORKDIR /app
+COPY --chown=node:node package.json package-lock.json .npmrc ./
+RUN npm i
+ENV PATH /app/node_modules/.bin:$PATH
+
+# Start application with live reload & debugger enabled
+CMD ["npm", "run", "start:dev"]

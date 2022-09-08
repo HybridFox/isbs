@@ -1,0 +1,14 @@
+{
+  "name": "isbs",
+  "version": "1.0.0",
+  "description": "The 'Info Scherm Beheer Systeen' aka Management System for Info Screens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GNU AGPLv3",
+  "devDependencies": {
+    "editorconfig": "^0.15.3"
+  }
+}
