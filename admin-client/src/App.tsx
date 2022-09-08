@@ -1,6 +1,6 @@
 import React from 'react';
+import { DragDropContext } from 'react-beautiful-dnd';
 
-import logo from './logo.svg';
 import './App.css';
 import useSocketEmitter from './hooks/useSocketEmitter';
 

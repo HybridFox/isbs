@@ -57,7 +57,7 @@ export class CoreModule implements OnApplicationShutdown {
 	 */
 	public static initSwagger(app: INestApplication): void {
 		const options: Omit<OpenAPIObject, 'paths'> = new DocumentBuilder()
-			.setTitle('FedNot Immo Barometer API')
+			.setTitle('ISBS Swagger')
 			.setDescription(description)
 			.setVersion(version)
 			.build();
